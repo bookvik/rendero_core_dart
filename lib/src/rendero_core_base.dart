@@ -1,7 +1,5 @@
 typedef MSD = Map<String, dynamic>;
 
-T? cast<T>(x) => x is T ? x : null;
-
 T render<T>(MSD plugins, MSD j) {
   if (plugins[j["module"]] == null) {
     throw Exception("RENDERO ERROR: No have module ${j["module"]}");
